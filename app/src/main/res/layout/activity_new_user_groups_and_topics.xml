@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChooseYourGroupsAcitivity">
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_user_groups_topics_toolbar">
+
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:text="What do you want to see ?"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textColor="@color/gold"
+                android:textSize="@dimen/_20sdp"
+                android:layout_gravity="center_horizontal">
+                
+            </TextView>
+            <TextView
+                android:id="@+id/new_user_groups_topics_groups_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="Groups "
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                >
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/new_user_groups_topics_groups_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                android:id="@+id/new_user_groups_topics_topics_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:text="Topics"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                >
+            </TextView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/new_user_groups_topics_topics_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/new_user_groups_topics_button"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/button"
+                android:backgroundTint="#09E4B7"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Im ready!"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

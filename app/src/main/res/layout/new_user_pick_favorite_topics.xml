@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/new_user_pick_topics_cardview"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:layout_width="wrap_content"
+        android:background="@drawable/shadow_x_y_stroke_4_black"
+        app:strokeColor="@color/black"
+        app:strokeWidth="@dimen/_1sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:backgroundTint="@color/cardview"
+        app:cardCornerRadius="@dimen/_20sdp"
+        android:elevation="@dimen/_4sdp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/new_user_pick_topics_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_37sdp"
+            android:textSize="@dimen/_18sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:text="Football">
+
+        </TextView>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

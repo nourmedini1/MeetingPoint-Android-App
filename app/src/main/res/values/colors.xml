@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green">#2F9F88</color>
+    <color name="primary1">#5c73bb</color>
+    <color name="primary2">#24409A</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="grey">#99a5ba</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="gold">#AE8625</color>
+    <color name="cardview">#EEEDED</color>
+    <color name="beige">#E3D6B8</color>
+    <color name="beigewhite">#EFE9DB</color>
+</resources>

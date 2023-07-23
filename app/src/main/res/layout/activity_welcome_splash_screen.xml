@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.WelcomeSplashScreenActivity">
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="@dimen/_240sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+        app:lottie_rawRes="@raw/gold_tick"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center">
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:textColor="@color/black"
+        android:text="You are now ready to enter the meetingPoint"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/_21sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+
+</LinearLayout>

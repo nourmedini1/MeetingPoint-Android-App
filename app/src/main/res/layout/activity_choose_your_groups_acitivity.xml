@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChooseYourGroupsAcitivity">
+    <include
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choose_groups_toolbar">
+
+    </include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/choose_groups_trending_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Trending "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:drawableEndCompat="@drawable/trending">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_groups_trending_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/choose_groups_favorite_topics_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="Related to your favorite topics "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:drawableEndCompat="@drawable/favorite">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_groups_favorite_topics_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/choose_groups_people_in_your_groups_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="People in your groups are also in "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        >
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/choose_groups_people_in_your_groups_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@drawable/button_home_recycler"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="Create a group"
+            android:id="@+id/create_group_button"
+            android:textStyle="bold"
+            android:textAllCaps="false">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

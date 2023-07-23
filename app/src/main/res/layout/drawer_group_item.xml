@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_50sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="horizontal">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/img_drawer_group"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:background="@drawable/rounded_img"
+        android:scaleType="centerCrop"
+        app:riv_oval="true">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+    <TextView
+        android:id="@+id/txt_drawer_group"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/open_sans"
+        android:textSize="@dimen/_12sdp"
+
+        android:textColor="@color/black"
+        android:gravity="start|center"
+        android:paddingStart="@dimen/_10sdp"
+        android:maxLines="1"
+        android:paddingEnd="@dimen/_10sdp">
+
+    </TextView>
+
+</LinearLayout>

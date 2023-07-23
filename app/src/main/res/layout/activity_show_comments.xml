@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    tools:context=".activities.ShowComments">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_450sdp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/show_comments_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:layout_width="match_parent"
+            android:id="@+id/no_comments"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:text="There are no comments yet"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:textSize="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+        <EditText
+            android:id="@+id/add_comment"
+            android:layout_width="match_parent"
+            android:background="@drawable/custom_edittext"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_14sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:hint="add a comment..."
+            android:gravity="start"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_height="@dimen/_100sdp">
+        </EditText>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/post_comment"
+            android:textAllCaps="false"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/black"
+            android:text="comment"
+            android:textSize="@dimen/_14sdp"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/button_home_recycler"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:backgroundTint="#E6C77B"
+            android:layout_marginTop="@dimen/_5sdp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+
+
+
+</LinearLayout>

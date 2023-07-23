@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/comment_user_image"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/app_img"
+        app:riv_corner_radius="@dimen/_60sdp">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cardview"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/cardview"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_15sdp"
+        app:strokeColor="@color/gold"
+        app:strokeWidth="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/comment_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="UserName"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/ubuntu_bold"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_12sdp">
+
+            </TextView>
+            <TextView
+                android:id="@+id/comment_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:text="this is my first comment on this platform"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="#5B5C5C"
+                android:fontFamily="@font/ubuntu_regular"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingStart="@dimen/_20sdp"
+
+                android:paddingTop="@dimen/_10sdp"
+
+                android:textSize="@dimen/_12sdp">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

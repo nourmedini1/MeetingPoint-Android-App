@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    tools:context=".activities.UserProfileActivity">
+    <FrameLayout
+        android:id="@+id/user_profile_photos_frame"
+        android:transitionName="transition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_165sdp">
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_140sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:fontFamily="@font/open_sans"
+            android:layout_gravity="end"
+
+            android:text=" "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="italic"
+            app:drawableEndCompat="@drawable/ic_baseline_logout_24">
+
+        </TextView>
+
+        <ImageView
+
+            android:id="@+id/user_profile_back_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@color/grey"
+            android:scaleType="centerCrop"
+            android:background="@drawable/user_profile_background"
+            >
+        </ImageView>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:elevation="@dimen/_10sdp"
+            android:outlineSpotShadowColor="@color/black"
+            android:id="@+id/user_profile_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal|start"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="@color/cardview"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/_60sdp">
+        </com.makeramen.roundedimageview.RoundedImageView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/user_profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sdp"
+                android:layout_gravity="start"
+                android:text="UserName"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textColor="@color/black"
+
+                android:drawablePadding="@dimen/_10sdp"
+                app:drawableEndCompat="@drawable/edit_icon"
+                >
+            </TextView>
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/user_profile_rating"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="start"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true">
+
+            </com.airbnb.lottie.LottieAnimationView>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/user_profile_my_groups"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:text="My Groups                                   "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        app:drawableEndCompat="@drawable/plus_icon">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_profile_my_groups_recycler"
+        android:layout_width="@dimen/_400sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:scrollbars="none"
+        android:layout_height="@dimen/_180sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:id="@+id/user_profile_my_favourite_topics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:text="My favorite topics                    "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sdp"
+        app:drawableEndCompat="@drawable/plus_icon">
+    </TextView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/user_profile_my_favourite_topics_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center_horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_home_recycler"
+            android:backgroundTint="@color/gold"
+            android:id="@+id/my_posts"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ubuntu_regular"
+            android:text="My posts">
+
+        </androidx.appcompat.widget.AppCompatButton>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_home_recycler"
+            android:backgroundTint="@color/gold"
+            android:id="@+id/user_conversation"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/ubuntu_regular"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:text="My messages">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>

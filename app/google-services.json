@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "56554716250",
+    "project_id": "meetingpoint-28b8e",
+    "storage_bucket": "meetingpoint-28b8e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56554716250:android:ff7bdffef6b8a0c48b2c63",
+        "android_client_info": {
+          "package_name": "com.app.meetingpoint"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrump5OX7o3qG9nept8QUxYU3BwHnqA8M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

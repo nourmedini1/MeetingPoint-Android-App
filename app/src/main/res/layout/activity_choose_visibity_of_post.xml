@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.ChooseVisibilityOfPost">
+    <TextView
+        android:id="@+id/choose_visibility_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:text="  Choose the visibility of this post"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="@dimen/_14sdp"
+
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_20sdp"
+        tools:ignore="RtlSymmetry"
+
+        app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24">
+
+    </TextView>
+    <LinearLayout
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+
+        android:backgroundTint="@color/gold"
+        android:background="@color/gold"
+        android:orientation="vertical"
+        >
+
+    </LinearLayout>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/choose_visibility_lottie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginBottom="@dimen/_30sdp">
+
+    </com.airbnb.lottie.LottieAnimationView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/visibility"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textSize="@dimen/_13sdp"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/black">
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pick a visibility for this post"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_10sdp"
+        android:textSize="@dimen/_14sdp">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/choose_visibility_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/choose_visibility_radio_button_public"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textColor="@color/black"
+            android:text="Public (None members can see it)"
+            android:paddingStart="@dimen/_20sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_baseline_cell_tower_24"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            >
+
+        </androidx.appcompat.widget.AppCompatRadioButton>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:backgroundTint="@color/gold"
+            android:background="@color/gold"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/choose_visibility_radio_button_private"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:textColor="@color/black"
+            android:text="Private (Only members can see it)"
+            android:paddingStart="@dimen/_20sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:drawableEnd="@drawable/ic_baseline_lock_person_24"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            >
+
+        </androidx.appcompat.widget.AppCompatRadioButton>
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:backgroundTint="@color/gold"
+            android:background="@color/gold"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical"
+            >
+
+        </LinearLayout>
+
+
+    </RadioGroup>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/choose_visibility_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:background="@drawable/button_home_recycler"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:elevation="@dimen/_5sdp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MeetingPoint</string>
+    <string name="welcome">Welcome</string>
+    <string name="to_the_meeting_point">To The Meeting Point</string>
+    <string name="login_to_continue">login to continue</string>
+    <string name="email_edittext">Email</string>
+    <string name="login_buton">Login</string>
+    <string name="this_is_the_meeting_point_the_crossroad_of_our_ideas">This is the meeting point. The crossroads of our ideas</string>
+    <string name="meeting_point_title">Meeting Point</string>
+    <string name="sign_up_txt">Sign up</string>
+    <string name="login_screen_title">Login</string>
+    <string name="please_enter_your_email">   Please enter your email</string>
+    <string name="password">Password</string>
+    <string name="please_enter_your_password">   Please enter your password</string>
+    <string name="todo">TODO</string>
+    <string name="signup_screen_title">SignUp</string>
+    <string name="add_image">add image</string>
+    <string name="confirm_password">Confirm password</string>
+    <string name="please_confirm_your_password">Please confirm your password</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="my_groups">My Groups</string>
+    <string name="visibility">We care about your privacy and want to give you more ways to control who you share with.</string>
+</resources>

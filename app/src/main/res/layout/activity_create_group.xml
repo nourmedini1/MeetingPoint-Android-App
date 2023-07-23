@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreateGroup">
+    <FrameLayout
+        android:id="@+id/create_group_info_photos"
+        android:transitionName="transition"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_165sdp">
+        <ImageView
+            android:id="@+id/create_group_info_back_image"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:scaleType="centerCrop"
+            android:background="@color/grey"
+            android:layout_height="@dimen/_100sdp">
+        </ImageView>
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/create_group_info_image"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:src="#E8EAED"
+            android:scaleType="centerCrop"
+            app:riv_corner_radius="@dimen/_60sdp">
+        </com.makeramen.roundedimageview.RoundedImageView>
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="groupname*"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:layout_width="@dimen/_280sdp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/create_group_info_groupname"
+                android:hint="choose a groupname"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:inputType="textPersonName"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:shadowDx="@integer/material_motion_duration_long_2"
+                android:shadowColor="@color/black"
+                android:shadowDy="@integer/material_motion_duration_long_2"
+                android:imeOptions="actionNext"
+                android:layout_height="@dimen/_40sdp"
+                android:autofillHints="">
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_16sdp"
+                android:fontFamily="@font/ubuntu_light"
+                android:text="description*"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content">
+            </TextView>
+            <EditText
+                android:layout_width="@dimen/_280sdp"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:id="@+id/create_group_info_description"
+                android:hint="description"
+                android:paddingStart="@dimen/_20sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:inputType="textEmailAddress"
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:shadowDx="@integer/material_motion_duration_long_2"
+                android:shadowColor="@color/black"
+                android:shadowDy="@integer/material_motion_duration_long_2"
+                android:imeOptions="actionNext"
+                android:layout_height="@dimen/_40sdp">
+            </EditText>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/available_topics"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:orientation="horizontal"
+
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/create_group_info_apply"
+                android:layout_width="@dimen/_120sdp"
+                android:background="@drawable/button"
+                android:layout_gravity="end"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:text="Create"
+                android:textSize="@dimen/_18sdp"
+                android:gravity="center"
+                android:textAllCaps="false"
+                android:fontFamily="@font/ubuntu_bold"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:elevation="@dimen/_5sdp"
+                app:elevation="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_height="@dimen/_50sdp">
+
+            </com.google.android.material.button.MaterialButton>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

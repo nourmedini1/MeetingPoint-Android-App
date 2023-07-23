@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.CreatePost">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10sdp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/create_post_back"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:text="  Create post"
+            android:layout_marginEnd="@dimen/_85sdp"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            app:drawableStartCompat="@drawable/ic_baseline_arrow_back_24">
+
+        </TextView>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/create_post_post"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_13sdp"
+            android:background="@drawable/button_home_recycler">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/gold">
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_post_add_photo_controller"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_gravity="end|center_vertical">
+            <TextView
+                android:id="@+id/create_post_add_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:drawableStart="@drawable/photos_icon"
+
+               >
+
+            </TextView>
+            <TextView
+                android:id="@+id/create_post_cancel_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:drawableStart="@drawable/ic_baseline_close_24"
+
+               >
+
+            </TextView>
+
+        </FrameLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal"
+            >
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/create_post_user_image"
+                android:layout_width="@dimen/_48sdp"
+                android:layout_height="@dimen/_48sdp"
+                app:riv_corner_radius="@dimen/_60sdp"
+                android:src="@drawable/app_img">
+            </com.makeramen.roundedimageview.RoundedImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/create_post_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_13sdp"
+                    android:text="UserName"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/ubuntu_bold"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_20sdp">
+                </TextView>
+                <ImageView
+                    android:id="@+id/create_post_visibility"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:src="@drawable/ic_baseline_lock_person_24"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_5sdp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/create_post_caption"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:gravity="start|top"
+            android:hint=" What's on your mind ?"
+            android:fontFamily="@font/ubuntu_regular"
+            android:textSize="@dimen/_12sdp">
+
+        </EditText>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/create_post_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/_20sdp"
+
+            >
+        </androidx.appcompat.widget.AppCompatImageView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

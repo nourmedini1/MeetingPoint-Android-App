@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_2sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:backgroundTint="@color/cardview"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+
+                    android:orientation="horizontal">
+
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/post_poster_image"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+                        android:layout_gravity="center_vertical"
+
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/app_img"
+                        app:riv_corner_radius="@dimen/_45sdp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/post_sharer_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:fontFamily="@font/ubuntu_bold"
+                                android:gravity="start|center_horizontal"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:text="Sharer name"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/shared_this"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:fontFamily="@font/ubuntu_regular"
+                                android:text="shared in "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp">
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/post_share_group_name"
+                                android:text="Innovations"
+                                android:fontFamily="@font/ubuntu_bold"
+                                android:textSize="@dimen/_12sdp"
+                                android:textColor="@color/black"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/post_poster_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:fontFamily="@font/ubuntu_bold"
+                                android:gravity="start|center_horizontal"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_2sdp"
+                                android:text="Poster name"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/in"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_3sdp"
+                                android:fontFamily="@font/ubuntu_regular"
+                                android:text="in "
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp">
+
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/post_group_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/ubuntu_bold"
+                                android:text=" Research"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_12sdp">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/post_date_time"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/_10sdp"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:gravity="top|start"
+                                android:paddingStart="@dimen/_5sdp"
+                                android:paddingEnd="@dimen/_5sdp"
+                                android:text="24/03/2023 12:45" />
+
+                            <ImageView
+                                android:id="@+id/post_visibility"
+                                android:layout_width="@dimen/_14sdp"
+                                android:layout_height="@dimen/_14sdp"
+                                android:layout_gravity="center|end"
+                                android:layout_marginTop="@dimen/_1sdp"
+                                android:layout_marginEnd="@dimen/_15sdp"
+                                android:src="@drawable/photos_icon">
+
+                            </ImageView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+           <TextView
+               android:id="@+id/post_caption"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="this is the caption on this post"
+               android:textColor="@color/black"
+               android:fontFamily="@font/ubuntu_regular"
+               android:layout_gravity="start"
+               android:layout_marginTop="@dimen/_12sdp"
+               android:layout_marginStart="@dimen/_10sdp"
+               android:layout_marginEnd="@dimen/_10sdp"
+               android:layout_marginBottom="@dimen/_5sdp">
+
+           </TextView>
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/post_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_5sdp">
+            </com.google.android.material.imageview.ShapeableImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:orientation="horizontal"
+                    >
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/post_heart_reacts"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true">
+                    </com.airbnb.lottie.LottieAnimationView>
+                    <TextView
+                        android:id="@+id/nb_heart_reacts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:gravity="center"
+                        android:text="32.8k">
+
+                    </TextView>
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:id="@+id/post_comments"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true">
+                    </com.airbnb.lottie.LottieAnimationView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_marginStart="@dimen/_2sdp"
+                        android:id="@+id/nb_comments"
+                        android:text="32.8k">
+
+                    </TextView>
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:layout_marginStart="@dimen/_50sdp"
+                        android:id="@+id/post_shares"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="@dimen/_32sdp"
+
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true">
+                    </com.airbnb.lottie.LottieAnimationView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/nb_shares"
+                        android:layout_marginStart="@dimen/_1sdp"
+                        android:text="32.8k">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:background="@color/gold">
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/heart_react"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="@dimen/_47sdp"
+                        android:layout_marginStart="@dimen/_23sdp"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:text=""
+                        android:drawableEnd="@drawable/heart">
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:id="@+id/comment"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:text=""
+                        android:drawableEnd="@drawable/commenter">
+                    </TextView>
+
+                    <TextView
+                        android:layout_marginStart="@dimen/_83sdp"
+                        android:id="@+id/share"
+                        android:layout_width="@dimen/_32sdp"
+                        android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:drawableEnd="@drawable/sharer"
+
+                        >
+                    </TextView>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

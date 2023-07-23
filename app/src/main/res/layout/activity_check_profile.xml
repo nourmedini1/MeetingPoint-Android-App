@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:context=".activities.CheckProfile">
+        <FrameLayout
+
+            android:transitionName="transition"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_165sdp">
+
+
+            <ImageView
+
+                android:id="@+id/check_profile_user_back_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@color/grey"
+                android:scaleType="centerCrop"
+                android:background="@drawable/user_profile_background"
+                >
+            </ImageView>
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:elevation="@dimen/_10sdp"
+                android:outlineSpotShadowColor="@color/black"
+                android:id="@+id/check_profile_user_image"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_gravity="center_horizontal|start"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_60sdp"
+                android:src="@color/cardview"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/_60sdp">
+            </com.makeramen.roundedimageview.RoundedImageView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/check_profile_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:textSize="@dimen/_18sdp"
+                    android:text="UserName"
+                    android:fontFamily="@font/ubuntu_regular"
+                    android:textColor="@color/black"
+
+                    android:drawablePadding="@dimen/_10sdp"
+
+                    >
+                </TextView>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/check_profile_rating"
+                    android:layout_width="@dimen/_80sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="start"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true">
+
+                </com.airbnb.lottie.LottieAnimationView>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/check_profile_shared_groups_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:text="You are both members of"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            >
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/check_profile_shared_groups"
+            android:layout_width="@dimen/_400sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:scrollbars="none"
+            android:layout_height="@dimen/_180sdp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <TextView
+            android:id="@+id/check_profile_topics_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="You are both interested in"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            >
+        </TextView>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/check_profile_shared_topics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+        </androidx.recyclerview.widget.RecyclerView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/check_profile_posts"
+                android:background="@drawable/button_home_recycler"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gold"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/ubuntu_regular"
+                android:textAllCaps="false"
+                android:text="Check user posts"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                >
+            </androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/check_profile_send_message"
+                android:background="@drawable/button_home_recycler"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:backgroundTint="@color/gold"
+                android:fontFamily="@font/ubuntu_regular"
+
+                android:textAllCaps="false"
+                android:text="Send a message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_14sdp"
+                >
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>
